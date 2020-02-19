@@ -6,7 +6,6 @@
 
 body {
     display: grid;
-    grid-template-rows: 4;
 }
 
 header {

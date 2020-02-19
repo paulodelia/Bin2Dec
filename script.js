@@ -23,8 +23,6 @@ document.querySelector('button').addEventListener('click', function () {
     bin.value = "";
 });
 
-
-
 function validateBin(bin) {
     for (let i = 0; i < bin.length; i++) {
         if (bin[i] != 0 && bin[i] != 1) {
