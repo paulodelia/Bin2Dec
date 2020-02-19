@@ -58,6 +58,10 @@ header {
     background-color: darkturquoise;
 }
 
+.show_calcs ul {
+    list-style-type: none;
+}
+
 .show_calcs li:nth-last-child(2) {
     padding-bottom: 5px;
     border-bottom: 1px solid black
