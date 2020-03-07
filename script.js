@@ -4,6 +4,7 @@ document.querySelector('button').addEventListener('click', function () {
     const calcList = document.querySelector('ul');
 
     result.textContent = "";
+    defaultMessages = ['Waiting for you to put the numbers', 'And press the Convert Button']
 
     if (validateBin(bin.value)) {
         result.textContent = `${bin.value} = ${calculateBin2Dec(bin.value)}`;
@@ -17,10 +18,17 @@ document.querySelector('button').addEventListener('click', function () {
             calcList.appendChild(li)
         }
     } else {
-        calcList.innerHTML = "";
+        calcList.innerHTML = ""
+        result.textContent = 'Result'
+        for(let message of defaultMessages) {
+            const li = document.createElement('li')
+            li.textContent = message;
+            calcList.appendChild(li);
+        }
+     
     }
-
     bin.value = "";
+
 });
 
 function validateBin(bin) {
